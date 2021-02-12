@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 1</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        function registrer() {
+            let navn = $("#navn").val();
+            let alder = $("#alder").val();
+
+            $("#ut").html("Navnet er :" + navn + ", og alderen er" + alder);
+        }
+
+    </script>
+</head>
+<body>
+Navn: <input type="text" id="navn" value=""/>
+Alder: <input type="text" id="alder" value="" />
+<button type="button" onclick="registrer()">Registrer navn og alder</button>
+<div id="ut"></div>
+
+</body>
+</html>
