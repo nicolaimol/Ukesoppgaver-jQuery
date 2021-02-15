@@ -5,11 +5,23 @@
     <title>Ekstraoppgave 1</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
+        function registrer() {
+            let ut = "<li>"
+            ut += "<input type='checkbox'>"
+            ut += "<span>" + $("#input").val() + "</span>"
+            ut += "</li>"
 
+            $("#gjoremal").prepend(ut);
+        }
 
     </script>
 </head>
 <body>
+Skriv inn todo: <input type="text" id="input" />
+<button type="button" onclick="registrer()">Registrer todo</button>
+
+<h2>Gjøremål:</h2>
+<ul id="gjoremal"></ul>
 
 </body>
 </html>
