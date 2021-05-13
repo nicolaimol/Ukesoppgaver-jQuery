@@ -4,20 +4,7 @@
     <meta charset="UTF-8">
     <title>Oppgave 2</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript">
-        // C = (5/9)*(F-32)
-        // F = (9/5)*C+32
-        function convertToCelsius() {
-            let far = parseFloat($("#Fahrenheit").val());
-            let cel = (5/9)*(far-32);
-            $("#Celsius").val(cel)
-        }
-
-        function convertToFahrenheit() {
-            let cel = Number($("#Celsius").val());
-            let far = (9/5)*cel + 32;
-            $("#Fahrenheit").val(far);
-        }
+    <script type="text/javascript" src="./oppgave2.js">
 
     </script>
 </head>
